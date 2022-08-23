@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/woowooyong/React-P6-Traveling-in-Kahosiung/static/css/main.bb65a4fc.css",
+    "main.js": "/woowooyong/React-P6-Traveling-in-Kahosiung/static/js/main.32062bb2.js",
+    "index.html": "/woowooyong/React-P6-Traveling-in-Kahosiung/index.html",
+    "main.bb65a4fc.css.map": "/woowooyong/React-P6-Traveling-in-Kahosiung/static/css/main.bb65a4fc.css.map",
+    "main.32062bb2.js.map": "/woowooyong/React-P6-Traveling-in-Kahosiung/static/js/main.32062bb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb65a4fc.css",
+    "static/js/main.32062bb2.js"
+  ]
+}
