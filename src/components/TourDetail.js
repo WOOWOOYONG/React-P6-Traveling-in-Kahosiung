@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import Loader from "./Loader";
+
 const TourDetail = () => {
   const { Id } = useParams();
   const [data, setData] = useState({});
@@ -22,19 +24,23 @@ const TourDetail = () => {
 
   return (
     <>
-      <main>
-        <h2>{Name}</h2>
-        <input
-          type="button"
-          value="回列表"
-          onClick={() => {
-            navigate("/tour");
-          }}
-        />
-        <br />
-        <img src={Picture1} alt={Name} />
-        <p>{Toldescribe}</p>
-      </main>
+      {data.Name ? (
+        <div className="card">
+          <h2>{Name}</h2>
+          <input
+            type="button"
+            value="回列表"
+            onClick={() => {
+              navigate("/tour");
+            }}
+          />
+          <br />
+          <img src={Picture1} alt={Name} />
+          <p>{Toldescribe}</p>
+        </div>
+      ) : (
+        <Loader />
+      )}
     </>
   );
 };

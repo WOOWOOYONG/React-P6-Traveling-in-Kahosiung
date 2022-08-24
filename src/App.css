@@ -16,6 +16,10 @@ body {
 main{
   padding: 100px 1rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header,footer {
@@ -66,8 +70,8 @@ footer {
 
 }
 
-.containrer {
-  background-color: aliceblue;
+.container {
+  
 }
 
 .container img {
@@ -78,4 +82,8 @@ footer {
 
 .container a {
   color: black;
+}
+
+.loader {
+  grid-column: span 4;
 }

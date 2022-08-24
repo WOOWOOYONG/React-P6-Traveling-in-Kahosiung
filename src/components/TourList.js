@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Loader from "./Loader";
 
 const TourList = () => {
   const [tourlist, setTourlist] = useState([]);
@@ -19,16 +20,20 @@ const TourList = () => {
     <>
       <h3>旅遊景點列表</h3>
       <div className="content">
-        {tourlist.map((item) => {
-          return (
-            <div className="container">
-              <Link to={`/tour/${item.Id}`}>
-                <img src={item.Picture1} alt={item.Name} />
-                <p>{item.Name}</p>
-              </Link>
-            </div>
-          );
-        })}
+        {tourlist.length > 0 ? (
+          tourlist.map((item) => {
+            return (
+              <div className="container">
+                <Link to={`/tour/${item.Id}`}>
+                  <img src={item.Picture1} alt={item.Name} />
+                  <p>{item.Name}</p>
+                </Link>
+              </div>
+            );
+          })
+        ) : (
+          <Loader />
+        )}
       </div>
     </>
   );
