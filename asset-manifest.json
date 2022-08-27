@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React-P6-Traveling-in-Kahosiung/static/css/main.409ca481.css",
-    "main.js": "/React-P6-Traveling-in-Kahosiung/static/js/main.ecada74a.js",
+    "main.css": "/React-P6-Traveling-in-Kahosiung/static/css/main.38913c6a.css",
+    "main.js": "/React-P6-Traveling-in-Kahosiung/static/js/main.15cd14ea.js",
     "index.html": "/React-P6-Traveling-in-Kahosiung/index.html",
-    "main.409ca481.css.map": "/React-P6-Traveling-in-Kahosiung/static/css/main.409ca481.css.map",
-    "main.ecada74a.js.map": "/React-P6-Traveling-in-Kahosiung/static/js/main.ecada74a.js.map"
+    "main.38913c6a.css.map": "/React-P6-Traveling-in-Kahosiung/static/css/main.38913c6a.css.map",
+    "main.15cd14ea.js.map": "/React-P6-Traveling-in-Kahosiung/static/js/main.15cd14ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.409ca481.css",
-    "static/js/main.ecada74a.js"
+    "static/css/main.38913c6a.css",
+    "static/js/main.15cd14ea.js"
   ]
 }
