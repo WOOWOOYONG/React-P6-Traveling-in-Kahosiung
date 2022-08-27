@@ -36,31 +36,46 @@ footer {
   bottom: 0;
   background-color:rgb(71, 71, 71) ;
   color: azure;
-  height: 5vh;
+  height: 6vh;
   padding-top: 0.8rem;
 
 }
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(71, 71, 71);
-  padding: 0.5rem;
+  height: 6vh;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
-.navbar li {
-  margin: 0 5rem;
+.navbar-links {
+  margin-right: 50rem;
 }
 
-.navbar li a {
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li a {
   text-decoration: none;
   color: azure;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+}
+.navbar-links li:hover {
+  background-color: rgb(111, 111, 111);
+  transition: all 0.3s;
 }
 
-.navbar li a:hover {
-  color: rgb(211, 199, 173);
-  transition: all 0.3s;
+nav .logo {
+  margin: 6px;
+  white-space:nowrap
 }
 
 .content {
@@ -70,9 +85,6 @@ footer {
 
 }
 
-.container {
-  
-}
 
 .container img {
   max-width: 80%;
@@ -86,4 +98,95 @@ footer {
 
 .loader {
   grid-column: span 4;
+}
+
+.card {
+  max-width: 50%;
+}
+
+.card > p {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.btn {
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background-color:rgb(71, 71, 71) ;
+  border: none;
+  cursor: pointer;
+
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+
+@media (max-width: 980px){
+  .content {
+    grid-template-columns: 1fr
+  }
+  .card {
+    max-width: 80%;
+  }
+  .card > img {
+    max-width: 100%;
+  }
+  .card > p {
+    text-align: center;
+  }
+}
+
+
+@media (max-width:580px){
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    height: 100vh;
+    display: none;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content:flex-start;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  
 }

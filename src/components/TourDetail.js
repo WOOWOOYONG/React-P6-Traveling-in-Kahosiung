@@ -27,16 +27,17 @@ const TourDetail = () => {
       {data.Name ? (
         <div className="card">
           <h2>{Name}</h2>
+          <br />
+          <img src={Picture1} alt={Name} />
+          <p>{Toldescribe}</p>
           <input
+            className="btn"
             type="button"
             value="回列表"
             onClick={() => {
               navigate("/tour");
             }}
           />
-          <br />
-          <img src={Picture1} alt={Name} />
-          <p>{Toldescribe}</p>
         </div>
       ) : (
         <Loader />
