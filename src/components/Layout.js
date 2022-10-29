@@ -22,23 +22,15 @@ const Layout = () => {
             <span className="bar"></span>
           </button>
           <div className="navbar-links">
-            <ul>
-              <li>
-                <Link to="/" onClick={removeToggle}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/faq" onClick={removeToggle}>
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link to="/tour" onClick={removeToggle}>
-                  Tour
-                </Link>
-              </li>
-            </ul>
+            <Link to="/" onClick={removeToggle}>
+              Home
+            </Link>
+            <Link to="/faq" onClick={removeToggle}>
+              FAQ
+            </Link>
+            <Link to="/tour" onClick={removeToggle}>
+              Tour
+            </Link>
           </div>
         </nav>
       </header>

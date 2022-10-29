@@ -52,25 +52,22 @@ footer {
 }
 
 .navbar-links {
-  margin-right: 50rem;
+  text-align: center;
+  margin-right: 5rem;
 }
 
-.navbar-links ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar-links li a {
+.navbar-links  a {
   text-decoration: none;
   color: azure;
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   display: inline-block;
 }
-.navbar-links li:hover {
+
+.navbar-links a:hover {
   background-color: rgb(111, 111, 111);
   transition: all 0.3s;
+  border-radius: 10px;
 }
 
 nav .logo {
@@ -84,7 +81,6 @@ nav .logo {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
-
 
 .container img {
   max-width: 80%;
@@ -160,31 +156,22 @@ nav .logo {
   .toggle-button {
     display: flex;
   }
-  .navbar-links {
-    height: 100vh;
-    display: none;
-    width: 100%;
-    background-color: rgb(71, 71, 71);
-  }
 
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    height: 100%;
   }
 
-  .navbar-links ul {
+  .navbar-links {
+    display: none;
     height: 100vh;
     width: 100%;
+    background-color: rgb(71, 71, 71);
     flex-direction: column;
-    display: flex;
     justify-content:flex-start;
   }
-  .navbar-links li {
-    text-align: center;
-  }
-  .navbar-links li a {
-    padding: .5rem 1rem;
-  }
+
   .navbar-links.active {
     display: flex;
   }
